@@ -136,6 +136,6 @@ button {
 }
 
 .search input {
-background-color:rgba(205, 221, 238, 1)
+background: transparent;
 }
 
