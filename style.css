@@ -108,23 +108,24 @@ button {
 .cart-right {
     float: right;
     position: absolute;
-    top: 0;
-    left:220px;
+    top: 36px;
+    right: 50px;
     width: 40px;
     height: 40px;
-
-}
-
-.cart {
+    background-image: url(img/cart.png);
     background-color: #ffffff;
-    padding: 10px 11px;
-    text-align: center;
+    background-repeat:no-repeat;
+    background-position: center;
+   
+    
+
 }
 
 .cart-right .count {
     position: absolute;
-    top: -5px;
-    left: -5px;
+    top: -10px;
+    left: -10px;
+    
     background-color: #2c71b8;
     border-radius: 50%;
     width: 20px;
@@ -132,5 +133,9 @@ button {
     text-align: center;
     color: #fff;
     line-height: 20px;
+}
+
+.search input {
+background-color:rgba(205, 221, 238, 1)
 }
 
