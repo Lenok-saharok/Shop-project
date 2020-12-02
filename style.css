@@ -78,7 +78,7 @@ body {
     background-position: right 20px center;
 }
 
-.menu li:hover .caret{
+.menu li:hover .caret {
     background-image: url(img/caret-down.png);
     background-repeat: no-repeat;
 }
@@ -120,6 +120,7 @@ button {
 }
 
 .cart-right {
+    float: left;
     position: absolute;
     margin-top: -50px;
     margin-left: 250px;
@@ -149,10 +150,11 @@ button {
     background: transparent;
 }
 
-.menu .down_menu{
+.menu .down_menu {
     display: none;
 }
-.menu>li:hover .down_menu{
+
+.menu>li:hover .down_menu {
     display: block;
 }
 
@@ -164,7 +166,7 @@ button {
 .down_menu>li {
     width: 300px;
     background-color: #2c71b8;
-    border:none;
+    border: none;
 }
 
 .down_menu li a {
@@ -177,4 +179,155 @@ button {
 .down_menu li:hover a {
     color: #2c71b8;
     background-color: white;
+}
+
+.col-md-3-sidebar {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-right: 1px solid white;
+}
+
+.filter {
+    width: 273px;
+
+}
+
+[class*=position] {
+    font-size: 21px;
+    color: #a0bfdf;
+    margin: 25px 30px;
+    padding-left: 15px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.mark-position {
+    background-image: url("img/Прямоугольник\ 5\ копия\ 4.png");
+    font-size: 21px;
+}
+
+.position {
+    background-image: url('img/Прямоугольник\ 5\ копия\ 4\ 2.png');
+}
+
+.name_filter {
+    font-size: 21px;
+    color: white;
+    font-weight: bold;
+    margin: 25px 30px;
+    padding-top: 28px;
+}
+
+.below_sidebar {
+    width: 208px;
+    height: 50px;
+    color: white;
+    background-color: #2c71b8;
+    border: 1px solid white;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 48px;
+    color: white;
+    margin: 70px 30px;
+}
+.col-md-6-main_menu{
+    width: 75%;
+}
+.main_menu {
+    width: 270px;
+    height: 600px;
+    background-color: rgba(44, 113, 184, 0.7490196078431373);
+    border: 1px solid #ffffff;
+    margin: 10px;
+}
+main .main_menu {
+    display: block;
+    float: left;
+}
+
+
+.in_cart {
+    width: 210px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+    background-image: url(img/icon\ \(2\).png);
+    background-repeat: no-repeat;
+    background-position: 180px 18px;
+
+}
+
+.details {
+    font-size: 21px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    width: 210px;
+    height: 50px;
+    background-color: #2c71b8;
+    border: 1px solid #ffffff;
+    margin-bottom: 17px;
+}
+
+h6 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.about_product {
+    margin: 10px 15px;
+    font-size: 21px;
+    font-weight: lighter;
+    color: white;
+}
+
+span {
+    font-weight: bold;
+}
+
+.card_price {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+sup{
+    font-size: 24px;
+    vertical-align: super;
+}
+[class*=card_thambnail_]{
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 270px;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.7490196078431373);
+    border: 1px solid #ffffff;
+}
+.card_thambnail_screen{
+    background-image: url(img/icon\ \(17\).png);
+}
+
+.card_thambnail_DU{
+    background-image: url(img/icon\ \(9\).png);
+}
+.card_thambnail_watch{
+    background-image: url(img/icon\ \(10\).png);
+}
+.card_thambnail_laptop{
+    background-image: url(img/icon\ \(16\).png);
+}
+.card_thambnail_pod{
+    background-image: url(img/icon\ \(14\).png);
+}
+.card_thambnail_phone{
+    background-image: url(img/icon\ \(12\).png);
+}
+.card_thambnail_tablet{
+    background-image: url(img/icon\ \(15\).png);
 }
