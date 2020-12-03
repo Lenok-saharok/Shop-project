@@ -72,6 +72,10 @@ body {
     background-color: #2c71b8;
 }
 
+.menu li:hover {
+    border: none;
+}
+
 .caret {
     background-image: url(img/caret-down-blue.png);
     background-repeat: no-repeat;
@@ -156,17 +160,15 @@ button {
 
 .menu>li:hover .down_menu {
     display: block;
-}
-
-.down_menu>ul {
     position: absolute;
-    list-style: none;
+    border:none;
 }
 
 .down_menu>li {
     width: 300px;
     background-color: #2c71b8;
     border: none;
+    clear: both;
 }
 
 .down_menu li a {
