@@ -24,9 +24,16 @@ body {
     float: left;
 }
 
-
 .row {
+    width: 100%;
+}
+
+
+.row:after {
     clear: both;
+
+    display: table;
+    content: "";
 }
 
 [class*=col-md-] {
