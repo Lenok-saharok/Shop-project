@@ -313,40 +313,20 @@ sup {
     vertical-align: super;
 }
 
-[class*=card_thambnail_] {
-    background-repeat: no-repeat;
-    background-position: center;
+.image {
+    text-align: center;
     height: 180px;
     background-color: rgba(255, 255, 255, 0.7490196078431373);
 }
 
-.card_thambnail_screen {
-    background-image: url(img/icon\ \(17\).png);
+.image img {
+    
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  
 }
 
-.card_thambnail_DU {
-    background-image: url(img/icon\ \(9\).png);
-}
-
-.card_thambnail_watch {
-    background-image: url(img/icon\ \(10\).png);
-}
-
-.card_thambnail_laptop {
-    background-image: url(img/icon\ \(16\).png);
-}
-
-.card_thambnail_pod {
-    background-image: url(img/icon\ \(14\).png);
-}
-
-.card_thambnail_phone {
-    background-image: url(img/icon\ \(12\).png);
-}
-
-.card_thambnail_tablet {
-    background-image: url(img/icon\ \(15\).png);
-}
 .card_thambnail-square{
     background-image: url(img/icon\ \(8\).png);
     width: 30px;
