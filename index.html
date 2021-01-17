@@ -48,11 +48,11 @@
                             <form action="" class="search">
                                 <input type="text" placeholder="search">
                                 <button type="submit"><img src="img/search.png" alt="search"></button>
-                           
+
                         </div>
                         <div class="col-md-3">
                             <div class="cart-right">
-                                <div class="count">4</div>
+                                <div id="products-count" class="count">0</div>
                             </div>
                         </div>
                     </div>
@@ -63,43 +63,48 @@
     <main>
         <div class="container">
             <div class="row">
+                <div class="col-md-12">
+
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-3">
                     <div class="filter">
                         <div class="name_filter">DEVICE TYPE</div>
                         <div class="filter-item"><input type="checkbox" id="device-type-laptop">
-                        <label for="device-type-laptop">laptop</label></div>
+                            <label for="device-type-laptop">laptop</label></div>
                         <div class="filter-item"><input type="checkbox" id="device-type-tabet">
-                        <label for="device-type-tabet">Tabet</label></div>
-                      
+                            <label for="device-type-tabet">Tabet</label></div>
+
 
                         <div class="name_filter">COLOR</div>
-                        
+
                         <div class="filter-item"><input type="checkbox" id="color-black">
-                        <label for="color-black">Black</label></div>
+                            <label for="color-black">Black</label></div>
                         <div class="filter-item"><input type="checkbox" id="color-red">
-                        <label for="color-red">Red</label></div>
+                            <label for="color-red">Red</label></div>
                         <div class="filter-item"><input type="checkbox" id="color-green">
-                        <label for="color-green">Green</label></div>
+                            <label for="color-green">Green</label></div>
                         <div class="filter-item"><input type="checkbox" id="color-blue">
-                        <label for="color-blue">Blue</label></div>
+                            <label for="color-blue">Blue</label></div>
                         <div class="filter-item"><input type="checkbox" id="color-orange">
-                        <label for="color-orange">Orange</label></div>
+                            <label for="color-orange">Orange</label></div>
 
                         <div class="name_filter">RAM</div>
                         <div class="filter-item"><input type="checkbox" id="ram-1gb">
-                        <label for="ram-1gb">1GB</label></div>
+                            <label for="ram-1gb">1GB</label></div>
                         <div class="filter-item"><input type="checkbox" id="ram-2gb">
-                        <label for="ram-2gb">2GB</label></div>
+                            <label for="ram-2gb">2GB</label></div>
                         <div class="filter-item"><input type="checkbox" id="ram-4gb">
-                        <label for="ram-4gb">4GB</label></div>
+                            <label for="ram-4gb">4GB</label></div>
                         <div class="filter-item"><input type="checkbox" id="ram-6gb">
-                        <label for="ram-6gb">6GB</label></div>
+                            <label for="ram-6gb">6GB</label></div>
                         <div class="filter-item"><input type="checkbox" id="ram-8gb">
-                        <label for="ram-8gb">8GB</label></div>
+                            <label for="ram-8gb">8GB</label></div>
                         <div class="under-filter"><a href="" alt="Show more options...">Show more options...</a></div>
-                       
-                            <button class="menu-button">SUBMIT</button>
-                       
+
+                        <button class="menu-button">SUBMIT</button>
+
                     </div>
                 </div>
 
@@ -139,9 +144,140 @@
                                 </div>
                                 <div class="card_price">$599<sup><small>25</small></sup></div>
 
-                                <button class="menu-button">MORE DETAILS</button>
-                                <button class="in-cart-button">ADD TO CART</button>
+                                <button class="menu-button more-details">MORE DETAILS</button>
+                                <button class="add-to-cart in-cart-button">ADD TO CART</button>
 
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="img/icon (9).png" alt="RC">
+                                </div>
+                                <div class="card_thambnail-square"></div>
+                                <div class="card_thambnail-heart "></div>
+
+                                <div class="card_name">
+                                    <h6>#2 Device Name</h6>
+                                    <p class="about_product">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    </p>
+                                    <p class="about_product"><span>TYPE:</span> Laptop</p>
+                                    <p class="about_product"><span>SCREEN SIZE:</span>7 inches</p>
+                                    <p class="about_product"><span>RAM:</span>1Gb</p>
+                                </div>
+                                <div class="card_price">$1250<sup><small>99</small></sup></div>
+                                <button class="menu-button more-details">MORE DETAILS</button>
+                                <button class="add-to-cart in-cart-button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="img/icon (10).png" alt="watch">
+                                </div>
+                                <div class="card_thambnail-square"></div>
+                                <div class="card_thambnail-heart"></div>
+
+                                <div class="card_name">
+                                    <h6>#3 Device Name</h6>
+                                    <p class="about_product">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    </p>
+                                    <p class="about_product"><span>TYPE:</span> Laptop</p>
+                                    <p class="about_product"><span>SCREEN SIZE:</span>7 inches</p>
+                                    <p class="about_product"><span>RAM:</span>1Gb</p>
+                                </div>
+                                <div class="card_price">$399<sup><small>50</small></sup></div>
+
+                                <button class="menu-button more-details">MORE DETAILS</button>
+                                <button class="add-to-cart in-cart-button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="img/icon (16).png" alt="laptop">
+                                </div>
+                                <div class="card_thambnail-square"></div>
+                                <div class="card_thambnail-heart"></div>
+
+                                <div class="card_name">
+                                    <h6>#1 Device Name</h6>
+                                    <p class="about_product">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    </p>
+                                    <p class="about_product"><span>TYPE:</span> Laptop</p>
+                                    <p class="about_product"><span>SCREEN SIZE:</span>7 inches</p>
+                                    <p class="about_product"><span>RAM:</span>1Gb</p>
+                                </div>
+                                <div class="card_price">$599<sup><small>25</small></sup></div>
+
+                                <button class="menu-button more-details">MORE DETAILS</button>
+                                <button class="add-to-cart in-cart-button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="img/icon (14).png" alt="pod">
+                                </div>
+                                <div class="card_thambnail-square"></div>
+                                <div class="card_thambnail-heart"></div>
+
+                                <div class="card_name">
+                                    <h6>#2 Device Name</h6>
+                                    <p class="about_product">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    </p>
+                                    <p class="about_product"><span>TYPE:</span> Laptop</p>
+                                    <p class="about_product"><span>SCREEN SIZE:</span>7 inches</p>
+                                    <p class="about_product"><span>RAM:</span>1Gb</p>
+                                </div>
+                                <div class="card_price">$1250<sup><small>99</small></sup></div>
+
+                                <button class="menu-button more-details">MORE DETAILS</button>
+                                <button class="add-to-cart in-cart-button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="img/icon (12).png" alt="watch">
+                                </div>
+                                <div class="card_thambnail-square"></div>
+                                <div class="card_thambnail-heart"></div>
+
+                                <div class="card_name">
+                                    <h6>#3 Device Name</h6>
+                                    <p class="about_product">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    </p>
+                                    <p class="about_product"><span>TYPE:</span> Laptop</p>
+                                    <p class="about_product"><span>SCREEN SIZE:</span>7 inches</p>
+                                    <p class="about_product"><span>RAM:</span>1Gb</p>
+                                </div>
+                                <div class="card_price">$399<sup><small>50</small></sup></div>
+
+                                <button class="menu-button more-details">MORE DETAILS</button>
+                                <button class="add-to-cart in-cart-button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="img/icon (15).png" alt="tablet">
+                                </div>
+                                <div class="card_thambnail-square"></div>
+                                <div class="card_thambnail-heart"></div>
+
+                                <div class="card_name">
+                                    <h6>#1 Device Name</h6>
+                                    <p class="about_product">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    </p>
+                                    <p class="about_product"><span>TYPE:</span> Laptop</p>
+                                    <p class="about_product"><span>SCREEN SIZE:</span>7 inches</p>
+                                    <p class="about_product"><span>RAM:</span>1Gb</p>
+                                </div>
+                                <div class="card_price">$599<sup><small>25</small></sup></div>
+
+                                <button class="menu-button more-details">MORE DETAILS</button>
+                                <button class="add-to-cart in-cart-button">ADD TO CART</button>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -161,15 +297,17 @@
                                     <p class="about_product"><span>RAM:</span>1Gb</p>
                                 </div>
                                 <div class="card_price">$1250<sup><small>99</small></sup></div>
-                                <button class="menu-button">MORE DETAILS</button>
-                                <button class="in-cart-button">ADD TO CART</button>
+
+                                <button class="menu-button more-details">MORE DETAILS</button>
+                                <button class="in-cart-button add-to-cart">ADD TO CART</button>
                             </div>
                         </div>
+
                         <div class="col-md-4">
                             <div class="product">
-                            <div class="image">
-                                <img src="img/icon (10).png" alt="watch">
-                            </div>
+                                <div class="image">
+                                    <img src="img/icon (12).png" alt="watch">
+                                </div>
                                 <div class="card_thambnail-square"></div>
                                 <div class="card_thambnail-heart"></div>
 
@@ -183,141 +321,8 @@
                                 </div>
                                 <div class="card_price">$399<sup><small>50</small></sup></div>
 
-                                <button class="menu-button">MORE DETAILS</button>
-                                <button class="in-cart-button">ADD TO CART</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="product">
-                                <div class="image">
-                                    <img src="img/icon (16).png" alt="laptop">
-                                </div>
-                            <div class="card_thambnail-square"></div>
-                            <div class="card_thambnail-heart"></div>
-
-                            <div class="card_name">
-                                <h6>#1 Device Name</h6>
-                                <p class="about_product">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                </p>
-                                <p class="about_product"><span>TYPE:</span> Laptop</p>
-                                <p class="about_product"><span>SCREEN SIZE:</span>7 inches</p>
-                                <p class="about_product"><span>RAM:</span>1Gb</p>
-                            </div>
-                            <div class="card_price">$599<sup><small>25</small></sup></div>
-                           
-                                <button class="menu-button">MORE DETAILS</button>
-                                <button class="in-cart-button">ADD TO CART</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="product">
-                                <div class="image">
-                                    <img src="img/icon (14).png" alt="pod">
-                                </div>
-                            <div class="card_thambnail-square"></div>
-                            <div class="card_thambnail-heart"></div>
-
-                            <div class="card_name">
-                                <h6>#2 Device Name</h6>
-                                <p class="about_product">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                </p>
-                                <p class="about_product"><span>TYPE:</span> Laptop</p>
-                                <p class="about_product"><span>SCREEN SIZE:</span>7 inches</p>
-                                <p class="about_product"><span>RAM:</span>1Gb</p>
-                            </div>
-                            <div class="card_price">$1250<sup><small>99</small></sup></div>
-                           
-                                <button class="menu-button">MORE DETAILS</button>
-                                <button class="in-cart-button">ADD TO CART</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="product">
-                                <div class="image">
-                                    <img src="img/icon (12).png" alt="watch">
-                                </div>
-                            <div class="card_thambnail-square"></div>
-                            <div class="card_thambnail-heart"></div>
-
-                            <div class="card_name">
-                                <h6>#3 Device Name</h6>
-                                <p class="about_product">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                </p>
-                                <p class="about_product"><span>TYPE:</span> Laptop</p>
-                                <p class="about_product"><span>SCREEN SIZE:</span>7 inches</p>
-                                <p class="about_product"><span>RAM:</span>1Gb</p>
-                            </div>
-                            <div class="card_price">$399<sup><small>50</small></sup></div>
-                           
-                                <button class="menu-button">MORE DETAILS</button>
-                                <button class="in-cart-button">ADD TO CART</button>
-                           </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="product">
-                                <div class="image">
-                                    <img src="img/icon (15).png" alt="tablet">
-                                </div>
-                            <div class="card_thambnail-square"></div>
-                            <div class="card_thambnail-heart"></div>
-
-                            <div class="card_name">
-                                <h6>#1 Device Name</h6>
-                                <p class="about_product">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                </p>
-                                <p class="about_product"><span>TYPE:</span> Laptop</p>
-                                <p class="about_product"><span>SCREEN SIZE:</span>7 inches</p>
-                                <p class="about_product"><span>RAM:</span>1Gb</p>
-                            </div>
-                            <div class="card_price">$599<sup><small>25</small></sup></div>
-                           
-                                <button class="menu-button">MORE DETAILS</button>
-                                <button class="in-cart-button">ADD TO CART</button>
-                           </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="product">
-                                <div class="image">
-                                    <img src="img/icon (9).png" alt="RC">
-                                </div>
-                            <div class="card_thambnail-square"></div>
-                            <div class="card_thambnail-heart"></div>
-
-                            <div class="card_name">
-                                <h6>#2 Device Name</h6>
-                                <p class="about_product">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                </p>
-                                <p class="about_product"><span>TYPE:</span> Laptop</p>
-                                <p class="about_product"><span>SCREEN SIZE:</span>7 inches</p>
-                                <p class="about_product"><span>RAM:</span>1Gb</p>
-                            </div>
-                            <div class="card_price">$1250<sup><small>99</small></sup></div>
-                           
-                                <button class="menu-button">MORE DETAILS</button>
-                                <button class="in-cart-button">ADD TO CART</button>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="product">
-                                <div class="image">
-                                    <img src="img/icon (12).png" alt="watch">
-                                </div>
-                            <div class="card_thambnail-square"></div>
-                            <div class="card_thambnail-heart"></div>
-
-                            <div class="card_name">
-                                <h6>#3 Device Name</h6>
-                                <p class="about_product">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                </p>
-                                <p class="about_product"><span>TYPE:</span> Laptop</p>
-                                <p class="about_product"><span>SCREEN SIZE:</span>7 inches</p>
-                                <p class="about_product"><span>RAM:</span>1Gb</p>
-                            </div>
-                            <div class="card_price">$399<sup><small>50</small></sup></div>
-                           
-                                <button class="menu-button">MORE DETAILS</button>
-                                <button class="in-cart-button">ADD TO CART</button>
+                                <button class="menu-button more-details">MORE DETAILS</button>
+                                <button class="add-to-cart in-cart-button">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -326,9 +331,22 @@
             </div>
         </div>
     </main>
-<footer class="footer">
-<p>&copy Copyright 2017</p>
-</footer>
+    <footer class="footer">
+        <p>&copy Copyright 2017</p>
+    </footer>
+    <div class="modal hide">
+        <div class="modal-block">
+            <form action="">
+                <div class="btn-close">X</div>
+                <h3>Please call more</h3>
+                <div class="form-fields"><input type="text" placeholder="Your name"></div>
+                <div class="form-fields"><input type="text" placeholder="Your phone"></div>
+                <button>Please Call</button>
+            </form>
+
+        </div>
+    </div>
 </body>
+<script src="app.js"></script>
 
 </html>
