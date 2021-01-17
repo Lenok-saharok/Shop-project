@@ -4,8 +4,9 @@ let addToCartButtons= document.querySelectorAll(".add-to-cart");
 
     for(let i=0; i<addToCartButtons.length; i++) {
         addToCartButtons[i].addEventListener("click",function (event){
+            event.preventDefault();
+            productsCountEl.textContent = +productsCountEl.textContent +1;
             
-            productsCountEl.textContent = +productsCountEl +1;
         })
 
     }
