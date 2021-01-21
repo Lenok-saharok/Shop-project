@@ -502,3 +502,7 @@ font-size: 21px;
 .show{
     display: block;
 }
+.product-quantity,.product-quantity input{
+    text-align: center;
+}
+

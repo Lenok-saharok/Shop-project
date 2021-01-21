@@ -61,3 +61,62 @@ likeButons.forEach((btn) => {
       
     })
 })
+
+// change product count 
+
+let decrementBtns=document.querySelectorAll(".decrement-btn");
+let incrementBtns=document.querySelectorAll(".increment-btn");
+//let quantityValue= document.querySelectorAll(".product-quantity input") [0];
+
+// let minCount=1;
+// let maxCount=5;
+
+// let currentCount=+quantityValue.value;
+
+function toggleButtonState (nextCount, btn){
+    let dcbt=btn.closest(".product-quantity").querySelector(".decrement-btn");
+    let icbt=btn.closest(".product-quantity").querySelector(".increment-btn");
+    if(nextCount>=5){
+        icbt.disabled=true;
+    } else if(nextCount<=5){
+        icbt.disabled=false;
+    }
+    if(nextCount<=1){
+        dcbt.disabled=true;
+    }else{
+        dcbt.disabled=false;
+    }
+    
+}
+
+
+function getInput(btn){
+return btn.closest(".product-quantity").querySelector("input");
+}
+
+incrementBtns.forEach(function(btn){
+    btn.addEventListener("click", function(event){
+        event.preventDefault();
+       let quantityValue=getInput(btn);
+        let currentCount= +quantityValue.value;
+        let nextCount=currentCount+1;
+        quantityValue.value=nextCount;
+        
+        toggleButtonState(nextCount, btn);
+    })
+})
+
+
+decrementBtns.forEach(function(btn){
+btn.addEventListener("click", function(event){
+    event.preventDefault();
+    let quantityValue=getInput(btn);
+    let currentCount= +quantityValue.value;
+    let nextCount=currentCount-1;
+    quantityValue.value=nextCount;
+
+   
+    toggleButtonState(nextCount, btn);
+})
+})
+
