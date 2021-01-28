@@ -68,57 +68,95 @@ likeButons.forEach((btn) => {
 
 let decrementBtns=document.querySelectorAll(".decrement-btn");
 let incrementBtns=document.querySelectorAll(".increment-btn");
-//let quantityValue= document.querySelectorAll(".product-quantity input") [0];
+let quantityValue=document.querySelectorAll(".product-quantity input");
 
-// let minCount=1;
-// let maxCount=5;
-
-// let currentCount=+quantityValue.value;
-
-function toggleButtonState (nextCount, btn){
-    let dcbt=btn.closest(".product-quantity").querySelector(".decrement-btn");
-    let icbt=btn.closest(".product-quantity").querySelector(".increment-btn");
-    if(nextCount>=5){
-        icbt.disabled=true;
-    } else if(nextCount<=5){
-        icbt.disabled=false;
-    }
-    if(nextCount<=1){
-        dcbt.disabled=true;
-    }else{
-        dcbt.disabled=false;
-    }
+// function toggleButtonState (nextCount, btn){
+//     let dcbt=btn.closest(".product-quantity").querySelector(".decrement-btn");
+//     let icbt=btn.closest(".product-quantity").querySelector(".increment-btn");
+//     if(nextCount>=5){
+//         icbt.disabled=true;
+//     } else if(nextCount<=5){
+//         icbt.disabled=false;
+//     }
+//     if(nextCount<=1){
+//         dcbt.disabled=true;
+//     }else{
+//         dcbt.disabled=false;
+//     }
     
-}
+// }
 
 
-function getInput(btn){
-return btn.closest(".product-quantity").querySelector("input");
-}
+// function getInput(btn){
+// return btn.closest(".product-quantity").querySelector("input");
+// }
 
-incrementBtns.forEach(function(btn){
-    btn.addEventListener("click", function(event){
-        event.preventDefault();
-       let quantityValue=getInput(btn);
-        let currentCount= +quantityValue.value;
-        let nextCount=currentCount+1;
-        quantityValue.value=nextCount;
+// incrementBtns.forEach(function(btn){
+//     btn.addEventListener("click", function(event){
+//         event.preventDefault();
+//        let quantityValue=getInput(btn);
+//         let currentCount= +quantityValue.value;
+//         let nextCount=currentCount+1;
+//         quantityValue.value=nextCount;
         
-        toggleButtonState(nextCount, btn);
-    })
-})
+//         toggleButtonState(nextCount, btn);
+//     })
+// })
 
 
-decrementBtns.forEach(function(btn){
-btn.addEventListener("click", function(event){
-    event.preventDefault();
-    let quantityValue=getInput(btn);
-    let currentCount= +quantityValue.value;
-    let nextCount=currentCount-1;
-    quantityValue.value=nextCount;
+// decrementBtns.forEach(function(btn){
+// btn.addEventListener("click", function(event){
+//     event.preventDefault();
+//     let quantityValue=getInput(btn);
+//     let currentCount= +quantityValue.value;
+//     let nextCount=currentCount-1;
+//     quantityValue.value=nextCount;
 
    
-    toggleButtonState(nextCount, btn);
-})
-})
+//     toggleButtonState(nextCount, btn);
+// })
+// })
+
+function Counter (incrementBtn,decrementBtn,inputField,minCount=1, maxCount=5){
+    this.domRefs={
+        incrementBtn,
+        decrementBtn,
+        inputField,
+
+    }
+    this.toggleButtonState=function(){
+
+        let count=this.domRefs.inputField.value;
+        this.domRefs.decrementBtn.disabled=count <= minCount;
+        this.domRefs.incrementBtn.disabled=count >= maxCount;
+    }
+    
+
+    this.toggleButtonState();
+    this.increment=function(event){
+        event.preventDefault();
+        let currentCount= +this.domRefs.inputField.value;
+       let nextCount=currentCount+1;
+       this.domRefs.inputField.value = nextCount;
+    
+       this.toggleButtonState()
+    }
+
+    this.decrement=function(event){
+        event.preventDefault();
+        let currentCount= +this.domRefs.inputField.value;
+       let nextCount=currentCount-1;
+       this.domRefs.inputField.value = nextCount;
+    
+       this.toggleButtonState()
+    }
+
+    this.domRefs.incrementBtn.addEventListener("click", this.increment.bind(this));
+    this.domRefs.decrementBtn.addEventListener("click", this.decrement.bind(this));
+    console.log(this)
+}
+for(let i=0; i<incrementBtns.length; i++){
+    const counter=new Counter(incrementBtns[i],decrementBtns[i],quantityValue[i]);
+} 
+
 
